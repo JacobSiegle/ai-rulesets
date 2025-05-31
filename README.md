@@ -5,7 +5,7 @@ WIP - Rules for code generation. Primary use is currently unit test generation.
 Rules align with specific project structures that may not be follow Angular recommendations. Example using "Array<T>" vs "T[]".
 
 -------
-
+```
 1. Apps with a directory that ends in "web" are Angular apps
 2. When working on Angular apps do the following "general rules"
    1. Use the "Array<T>" syntax over "T[]"
@@ -43,3 +43,4 @@ Rules align with specific project structures that may not be follow Angular reco
    22. Aim to test the important parts of the code, having high coverage isn't the top priority
    23. Don't mix jests "done()" with "async" in a test. Jest warns it can be bad practice.
    24. Keep the setup in "beforeEach" minimal, ideally it would just be ngMocks "MockBuilder"
+```
