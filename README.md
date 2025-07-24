@@ -4,7 +4,7 @@ WIP - Rules for code generation. Primary use is currently unit test generation.
 
 -------
 ```
-1. When working on Angular apps do the following "general rules"
+1. Perform the following "Angular general rules" when making angular code
    1. Follow all linting and prettier configuration and autofix any issues
    2. Remove any unused variables
    3. Avoid usage the "any" type or "as any"
@@ -15,8 +15,8 @@ WIP - Rules for code generation. Primary use is currently unit test generation.
    8. Prefix all tailwind classes with "tw-" otherwise they won't work
    9. Build UI layouts with responsive design in mind
    10. Add "data-testid" attribute to actionable components like buttons and anchor tags
-2. When making a unit test for Angular apps do the following "unit test rules"
-   1. Use the Angular "general rules" for tests
+2. Perform the following "Angular unit test rules" when making angular unit tests
+   1. Include all "Angular general rules"
    2. Utilize ngMocks https://ng-mocks.sudo.eu/ for effective dependency mocking within tests
    3. Use jest with typescript
    4. Dont use TestBed instead use ngMocks "MockBuilder" with builder syntax like .mock(), .keep(), .provide()
